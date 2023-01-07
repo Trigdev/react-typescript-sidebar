@@ -3,7 +3,9 @@ import Modal from "./Modal";
 import Sidebar from "./Sidebar";
 import Home from "./Home";
 
-const App = () => {
+export interface IApp {}
+
+const App: React.FC<IApp> = (): React.ReactElement => {
   return (
     <>
       <Home />

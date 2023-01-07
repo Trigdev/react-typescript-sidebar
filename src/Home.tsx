@@ -2,7 +2,9 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "./context";
 
-const Home = () => {
+export interface IHome {}
+
+const Home: React.FC<IHome> = (): React.ReactElement => {
   const { openModal, openSidebar } = useGlobalContext();
 
   return (

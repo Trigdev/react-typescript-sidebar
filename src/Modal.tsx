@@ -2,7 +2,9 @@ import React from "react";
 import { FaTimes } from "react-icons/fa";
 import { useGlobalContext } from "./context";
 
-const Modal = () => {
+export interface IModal {}
+
+const Modal: React.FC<IModal> = (): React.ReactElement => {
   const { closeModal, isModalOpen } = useGlobalContext();
 
   return (

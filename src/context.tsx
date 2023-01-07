@@ -5,13 +5,13 @@ type AppProviderProps = {
 };
 
 type ContextState = {
-  isModalOpen: boolean; 
-  isSidebarOpen: boolean; 
-  openSidebar: () => void;  
-  closeSidebar: () => void; 
-  openModal: () => void; 
+  isModalOpen: boolean;
+  isSidebarOpen: boolean;
+  openSidebar: () => void;
+  closeSidebar: () => void;
+  openModal: () => void;
   closeModal: () => void;
-}
+};
 
 const AppContext = React.createContext({} as ContextState);
 
